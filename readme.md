@@ -34,7 +34,7 @@ Your reputation score represents the total value of your online and offline rela
 
 ![lambda architecture](output/lambda_architecture.PNG)
 
-##Workflow
+## Workflow
 
 ![workflow](output/workflow.svg)
 
