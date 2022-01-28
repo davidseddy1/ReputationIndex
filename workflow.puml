@@ -1,0 +1,39 @@
+@startuml
+header Activity Digram
+footer Activity Digram
+
+Actor "Loan Applicant" as user
+entity RUI
+Actor Employer
+entity "BitCcoin Core" as bitCoin
+entity Blockchain
+entity "LOS UI" as los
+
+user -> bitCoin : create wallet
+bitCoin -[#0000FF]> bitCoin : get new address
+user -> RUI : registration screen
+RUI -> los : save information as data structure
+los -[#0000FF]> user : "request document signatures"
+|||
+user -> Employer : "Ask employer to sign by sending email with public address"
+Employer -[#0000FF]> user : "Sign and email back"
+|||
+user -> los : Upload document
+los -[#0000FF]> los : Loan submitted
+
+== Recommend ==
+
+Actor "Loan Applicant" as user
+entity RUI
+Actor Employer
+entity "BitCcoin Core" as bitCoin
+entity Blockchain
+entity "LOS UI" as los
+
+RUI -> Employer : "request a message to sign loan applicant (address)"
+Employer -> bitCoin : "sign message"
+Employer -[#0000FF]> RUI : "signature comes back"
+|||
+RUI -> Blockchain : submit signature to blockchain
+los -[#0000FF]> Blockchain : "if >0 consider it approved"
+@enduml
