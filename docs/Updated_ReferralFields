@@ -1,0 +1,21 @@
+One page:
+- Employer unique identifier with validation [ Type Number ]
+    - Autofill name for confirmation
+- Employee unique identifier with validation [ Type Number ]
+    - Autofill name for confirmation
+- Have some questions that are rated 1 to 5 [Drop Down]
+    - Rating of do they show up on time?
+    - Rating of how they behave under pressure?
+    - Work performance rating?
+    - Complaints from coworkers?
+    - How respected are they at work?
+    - How reliable are they?
+    - How often do they complete tasks on time?
+    - How often do they finish assigned tasks?
+- Yes/No Questions [Radio Buttons]
+    - Have they shown up intoxicated to work?
+    - Do they communicate well?
+- How long have they been working for the company? [Drop Down]
+    - Less than a year
+    - 1 <= to < 5 years
+    - >= 5 years
