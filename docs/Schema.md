@@ -1,4 +1,6 @@
 # Details about the Schema
+
+[OTRL Schema](https://github.com/davidseddy1/ReputationIndex/blob/main/docs/OTRL%20Schema.pdf)
 ## Employer table ##
 + __id__ is the primary key (Employer unique identifer)
 ## Employee table
