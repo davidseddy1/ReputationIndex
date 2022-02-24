@@ -1,0 +1,39 @@
+@startjson
+#highlight "employer_id"
+#highlight "employee_id"
+#highlight "employee_id" / "id"
+#highlight "employer_id" / "id"
+{
+    "id" : "int",
+    "employer_id" : {
+        "id" : "int",
+        "company_name" : "varchar",        
+        "first_name" : "varchar",
+        "middle_name" : "varchar",
+        "last_name"  : "varchar",
+        "phone_num" : "varchar",
+        "email" : "varchar"
+    },
+    "employee_id" : {
+        "id" : "int",        
+        "first_name" : "varchar",
+        "middle_name" : "varchar",
+        "last_name"  : "varchar",
+        "phone_num" : "varchar",
+        "email" : "varchar",
+        "rui" : "float",        
+        "referrals_num" : "int",
+        "last_updated" : "timestamp"
+    },
+    "s_work_time" : "int",
+    "s_pressure" : "int",
+    "s_ethic" : "int",
+    "s_complaints" : "int",
+    "s_respect" : "int",
+    "s_reliable" : "int",
+    "s_task_time" : "int",
+    "s_task_complete" : "int",
+    "s_task_communicate" : "int",
+    "s_task_experience" : "int"
+}
+@endjson

@@ -1,0 +1,24 @@
+@startuml
+header RUI Sequence Digram
+footer RUI Sequence Digram
+
+Actor "Employer"
+participant "Frontend"
+queue "API Gateway" as api
+entity "Lambda" as lamb
+Database "DynamoDB" as db
+collections "Blockchain" as block
+
+Employer -> Frontend : Submit referral form
+Frontend -> api : send referral data
+api -> lamb : send referral data
+lamb -> db : push(referral data)
+lamb -> lamb : calculate reputation score
+lamb -> block : insert RUI score in block chain
+lamb -> db : update reputation data
+db -> lamb : confirmation
+lamb -> api : confirmation
+api -> Frontend : confirmation
+Frontend -> Employer : Display Confirmation Page
+
+@enduml
