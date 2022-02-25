@@ -1,6 +1,6 @@
 @startuml
-header RUI Sequence Digram
-footer RUI Sequence Digram
+
+title "Employer Table"
 
 Actor "Employer"
 participant "Frontend"

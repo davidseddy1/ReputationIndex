@@ -1,0 +1,16 @@
+@startjson
+
+#highlight "id"
+
+{
+    "Employer" : "",
+    "id" : "int",
+    "company_name" : "varchar",        
+    "first_name" : "varchar",
+    "middle_name" : "varchar",
+    "last_name"  : "varchar",
+    "phone_num" : "varchar",
+    "email" : "varchar"
+}
+
+@endjson

@@ -4,8 +4,10 @@
 #highlight "employee_id" / "id"
 #highlight "employer_id" / "id"
 {
+    "Referral" : "",
     "id" : "int",
     "employer_id" : {
+        "Employer" : "",
         "id" : "int",
         "company_name" : "varchar",        
         "first_name" : "varchar",
@@ -15,6 +17,7 @@
         "email" : "varchar"
     },
     "employee_id" : {
+        "Employee" : "",
         "id" : "int",        
         "first_name" : "varchar",
         "middle_name" : "varchar",
