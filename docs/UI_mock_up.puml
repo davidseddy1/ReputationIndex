@@ -1,0 +1,35 @@
+
+@startsalt
+{#
+    Employer Information | * | * | * | *
+    Employer unique identifier | ^Select an option^ | * |Employer: Company X
+    .
+    Employee Information |^Select an option^ | * |Applicant:    Jane Doe 
+    .
+    .
+    Employee | Strongly Disagree |Disagree|Neutral|Agree|Strongly Agree 
+    .
+    Shows up to work on time: | (X) 1 | () 2 | () 3 | () 4 | () 5
+    .
+    Behaves well under pressure | (X) 1 | () 2 | () 3 | () 4 | () 5
+    .
+    Has exception work ethic | (X) 1 | () 2 | () 3 | () 4 | () 5
+    .
+    Does not receive complaints from coworkers | (X) 1 | () 2 | () 3 | () 4 | () 5
+    .
+    Is a well respected member of the workplace | (X) 1 | () 2 | () 3 | () 4 | () 5
+    .
+    Is a reliable individual in the workplace | (X) 1 | () 2 | () 3 | () 4 | () 5
+    .
+    Always completes tasks on time | (X) 1 | () 2 | () 3 | () 4 | () 5
+    .
+    Always fully completes assigned tasks | (X) 1 | () 2 | () 3 | () 4 | () 5
+    .
+    Has great communication skills | (X) 1 | () 2 | () 3 | () 4 | () 5
+    .
+    Are they a full-time employee? | (X) Full time | () Part time
+    .
+    Have long have they been working for the company| (X) 1 year or less | () 1 - 5 years | () 5 - 10 years | () 10+ years | .
+
+}
+@endsalt

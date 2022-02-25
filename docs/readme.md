@@ -8,6 +8,13 @@ __Assumptions__:
 
 !["RUI Sequence Diagram"](./output/RUI_Sequence_Diagram.svg)
 
+
+## Front-end Mock-up
+
+![Front-end Mock-up](./output/front_end_mockup.svg)
+
+## Lambda Integration
+
 ## Data Model
 
 This section depicts the data model for the reputation index.  There are 3 tables used for storing referral data, loan applicant data, and employee data.  The data model records referral survey data linking it to the appropriate loan applicant and employer tables.
