@@ -8,10 +8,11 @@ __Assumptions__:
 
 !["RUI Sequence Diagram"](./output/RUI_Sequence_Diagram.svg)
 
-
 ## Front-end Mock-up
 
 ![Front-end Mock-up](./output/front_end_mockup.svg)
+
+CLick [here](./Referral_Form_Mockup.pdf) to see the mock-up with branding.
 
 ## Lambda Integration
 
