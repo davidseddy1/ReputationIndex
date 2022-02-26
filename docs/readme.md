@@ -63,7 +63,7 @@ The psuedo code for the Lambda servless function is displayed below.
     blockchain.push(employee_id, updated_score, submission_time)
 
 
-## Data Model
+## DynamoDB Data Layout
 
 This section depicts the data model for the reputation index.  There are 3 tables used for storing referral data, loan applicant data, and employee data.  The data model records referral survey data linking it to the appropriate loan applicant and employer tables.
 
