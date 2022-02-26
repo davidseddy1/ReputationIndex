@@ -61,24 +61,24 @@ The psuedo code for the Lambda servless function is displayed below.
     dynamodb.Employee.update(employee_id, updated_score, updated_referral_nums, last_updated);
 
     blockchain.push(employee_id, updated_score, submission_time)
-    
+
 
 ## Data Model
 
 This section depicts the data model for the reputation index.  There are 3 tables used for storing referral data, loan applicant data, and employee data.  The data model records referral survey data linking it to the appropriate loan applicant and employer tables.
 
-## Employer Table
+### Employer Table
 
 ![Employer Table](./output/employer_table.svg)
 
 + __id__ is the primary key (Employer unique identifer)
 
-## Employee Table
+### Employee Table
  ![Employee Table](./output/employee_table.svg)
 
 + __id__ is the primary key (Employee unique identifier)
 
-## Referral Table
+### Referral Table
 
 !["Database Data Model"](./output/DB_tables.svg)
 
