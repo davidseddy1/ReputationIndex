@@ -16,6 +16,8 @@
         "phone_num" : "varchar",
         "email" : "varchar"
     },
+    "message" : "varchar",
+    "signature" : "varchar",
     "employee_id" : {
         "Employee" : "",
         "id" : "int",        
