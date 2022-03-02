@@ -49,12 +49,13 @@ The psuedo code for the Lambda servless function is displayed below.
     survey.map((question, q_score) => {
         score += weights[question] * q_score;
     });
+    score =  score / survey.length;
 
     dynamodb.Referral.post(referral);
 
     employee = dynamo.Employee.query(employee_id);
 
-    updated_score = (score + employee.score * employee.referral_nums) / (1 + employee.refrral_nums);
+    updated_score = (score + employee.score * employee.referral_nums) / (1 + employee.referral_nums);
 
     updated_referral_nums = employee.referral_nums + 1
 
