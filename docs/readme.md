@@ -24,23 +24,25 @@ The reputation score is calculated using a Lambda function.  Survey results from
 
 The incoming payload to the Lambda function is in a json format shown below.
 
-    playload ={
+    payload ={
         employer_id = 53465432031613,
-        employer_id = 5461653213541,
-            survey: {
-                s_work_time: 4,
-                s_pressure: 4,
-                s_ethic: 4,
-                s_complaints: 4,
-                s_respect: 4,
-                s_reliable: 4,
-                s_task_time: 4,
-                s_task_completion_time: 4,
-                s_communicate: 4,
-                s_experience: 4,
-                s_fulltime: 4
-            }
-        submission_time: "2022-02-22T01:52:54Z"
+        employee_id = 5461653213541,
+        message = "C5E119D81E16FC02EBEE38E057D78A91D",
+        digital_signature = "32990DD1A5B5AB9C5E119D81E16FC02EBEE38E057D78A91D10FE54",
+        survey: {
+            s_work_time: 4,
+            s_pressure: 4,
+            s_ethic: 4,
+            s_complaints: 4,
+            s_respect: 4,
+            s_reliable: 4,
+            s_task_time: 4,
+            s_task_completion_time: 4,
+            s_communicate: 4,
+            s_experience: 4,
+            s_fulltime: 4
+        },
+        submission_time: "2022-02-22T01:52:54Z",
     }
 
 The psuedo code for the Lambda servless function is displayed below.
@@ -61,7 +63,7 @@ The psuedo code for the Lambda servless function is displayed below.
 
     dynamodb.Employee.update(employee_id, updated_score, updated_referral_nums, last_updated);
 
-    blockchain.push(employee_id, updated_score, submission_time)
+    blockchain.push(employer_id, message, digital_signature, employee_id, updated_score, submission_time)
 
 
 ## DynamoDB Data Layout
