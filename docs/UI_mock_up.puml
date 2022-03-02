@@ -3,6 +3,8 @@
 {#
     Employer Information | * | * | * | *
     Employer unique identifier | ^Select an option^ | * |Employer: Company X
+    Message | E08D706B3E4CE964B632746CF568913CB93F1ED36476FBB0494B80ED17C5975C |*
+    Digital Signature  |^Select an option^|*|^Verify^
     .
     Employee Information |^Select an option^ | * |Applicant:    Jane Doe 
     .
