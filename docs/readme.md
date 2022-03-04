@@ -14,7 +14,7 @@ __Assumptions__:
 
 ![Front-end Mock-up](./output/front_end_mockup.svg)
 
-CLick [here](./Referral_Form_Mockup.pdf) to see the mock-up with branding.
+Click [here](./output//Referral_Form_Mockup.pdf) to see the mock-up with branding.
 
 ## Lambda Integration
 
