@@ -9,6 +9,7 @@
     "employer_id" : {
         "Employer" : "",
         "id" : "int",
+        "pk" : "varchar",
         "company_name" : "varchar",        
         "first_name" : "varchar",
         "middle_name" : "varchar",
@@ -20,7 +21,8 @@
     "signature" : "varchar",
     "employee_id" : {
         "Employee" : "",
-        "id" : "int",        
+        "id" : "int",   
+        "pk" : "varchar",
         "first_name" : "varchar",
         "middle_name" : "varchar",
         "last_name"  : "varchar",
@@ -39,6 +41,7 @@
     "s_task_time" : "int",
     "s_task_complete" : "int",
     "s_task_communicate" : "int",
-    "s_task_experience" : "int"
+    "s_task_experience" : "int",
+    "s_fulltime" : "int"
 }
 @endjson
