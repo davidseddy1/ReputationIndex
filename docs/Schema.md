@@ -1,10 +1,11 @@
 # Details about the Schema
-
-[OTRL Schema](https://github.com/davidseddy1/ReputationIndex/blob/main/docs/OTRL%20Schema.pdf)
+-  pk stands for public key
 ## Employer table ##
-+ __id__ is the primary key (Employer unique identifer)
++ __id__ is the primary key 
++ __pk__ is the global secondary index (Employer unique identifer)
 ## Employee table
-+ __id__ is the primary key (Employee unique identifier)
++ __id__ is the primary key 
++  __pk__ is the global secondary index (Employee unique identifer) 
 ## Referral
 + __id__ is the primary key
 + __*employer_id and employee_id*__ are the foreign keys from the Employer and Employee table
