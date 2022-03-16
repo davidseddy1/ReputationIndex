@@ -3,7 +3,8 @@
 
 {
     "Employee" : "",
-    "id" : "int",        
+    "id" : "int",     
+    "pk" : "varchar"
     "first_name" : "varchar",
     "middle_name" : "varchar",
     "last_name"  : "varchar",
