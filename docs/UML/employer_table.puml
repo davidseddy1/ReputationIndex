@@ -5,6 +5,7 @@
 {
     "Employer" : "",
     "id" : "int",
+    "pk" : "varchar", 
     "company_name" : "varchar",        
     "first_name" : "varchar",
     "middle_name" : "varchar",
