@@ -55,7 +55,7 @@ The psuedo code for the Lambda servless function is displayed below.
 
     dynamodb.Referral.post(referral);
 
-    employee = dynamo.Employee.query(employee_id);
+    employee = dynamo.Employee.query(employee_pk);
 
     updated_score = (score + employee.score * employee.referral_nums) / (1 + employee.referral_nums);
 
@@ -63,7 +63,7 @@ The psuedo code for the Lambda servless function is displayed below.
 
     dynamodb.Employee.update(employee_id, updated_score, updated_referral_nums, last_updated);
 
-    blockchain.push(employer_id, message, digital_signature, employee_id, updated_score, submission_time)
+    blockchain.push(employer_pk, message, digital_signature, employee_pk, score)
 
 
 ## DynamoDB Data Layout
