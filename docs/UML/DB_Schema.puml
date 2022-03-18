@@ -5,7 +5,6 @@
 #highlight "employer_id" / "id"
 {
     "Referral" : "",
-    "id" : "int",
     "employer_id" : {
         "Employer" : "",
         "id" : "int",
