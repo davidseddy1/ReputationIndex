@@ -7,7 +7,7 @@
     "Referral" : "",
     "employer_id" : {
         "Employer" : "",
-        "id" : "int",
+        "id" : "varchar",
         "pk" : "varchar",
         "company_name" : "varchar",        
         "first_name" : "varchar",
@@ -20,7 +20,7 @@
     "signature" : "varchar",
     "employee_id" : {
         "Employee" : "",
-        "id" : "int",   
+        "id" : "varchar",   
         "pk" : "varchar",
         "first_name" : "varchar",
         "middle_name" : "varchar",
