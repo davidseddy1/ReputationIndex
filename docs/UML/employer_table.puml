@@ -4,7 +4,7 @@
 
 {
     "Employer" : "",
-    "id" : "int",
+    "id" : "varchar",
     "pk" : "varchar", 
     "company_name" : "varchar",        
     "first_name" : "varchar",
