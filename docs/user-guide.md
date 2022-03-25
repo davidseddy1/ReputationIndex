@@ -7,7 +7,7 @@ Employers must visit https://bitcoin.org/en/bitcoin-core/ in order to download a
 
 ## Download and Install Bitcoin Core
 
-1. Visit https://bitcoin.org/en/bitcoin-core/ 
+1. Visit https://bitcoin.org/en/bitcoin-core/ and select the orange "Download Bitcoin Core" button.
 
 ![Bitcoin core landing page](./output/user-guide-images/bcc_landing_page.jpg)
 
