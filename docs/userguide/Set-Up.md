@@ -35,6 +35,34 @@ DEV_DB_AUTH_AWS_REGION=
 ## Step 3: Creating The Database with DynamoDB
 
 ## Step 4: Setting up BlockChain
+clone repository
+```
+git clone https://github.com/davidseddy1/PrivateBlockchain.git
+cd BlockChainCode
+```
+
+run the application to ensure that everything works
+```
+node app.js
+
+```
+
+After ensuring it runs. Install docker desktop to your computer.
+You can install at this site: https://www.docker.com/get-started/
+
+After this follow this tutorial to dockerize the blockchain. 
+
+Following the dockerizing of blockchain, rebuild your docker image:
+```
+docker build -t imagename .
+```
+
+Ensure that you have all the right credentials to access ecr from aws cli
+- Easiest route is to create an IAM user that as AdministrationAccess policy
+
+Proceeding forward you can use the following commands to login to ecr. 
+
+
 
 ## Step 5: Running it Locally
 
