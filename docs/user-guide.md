@@ -51,5 +51,26 @@ Employers must visit https://bitcoin.org/en/bitcoin-core/ in order to download a
 
 ![Create a new wallet](./output/user-guide-images/bcc_create_wallet.jpg)
 
+11. Name the wallet with your desired name and select create.
 
+![Naming and creating the wallet](./output/user-guide-images/bcc_wallet_prompt.jpg)
 
+12. Select "Window"
+
+![Select window in the header panel](./output/user-guide-images/bcc_select_window.jpg)
+
+13. Select "Console" in the drop down.
+
+![Select console](./output/user-guide-images/bcc_select_console.png)
+
+14. Type "getnewaddress 'companyName_public_key' 'legacy'" to produce a public key for your company
+    - Note: Your public key may be registered with OtRL, please skip this step if you have an existing public key.
+
+![Get address/public_key from console](./output/user-guide-images/bcc_get_address.jpg)
+
+15. Copy the address/public_key provided by the console.
+
+![Copy the address/public_key](./output/user-guide-images/bcc_copy_address.jpg)
+
+## Using Bitcoin Core with the Employee Referral Form
+This section will require both Bitcoin Core and the Employee Referral Form to be open on your device. Consecutive steps may jump from the Employee Referral Form to the Bitcoin Core application.
