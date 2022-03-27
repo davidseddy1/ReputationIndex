@@ -18,21 +18,21 @@ Complete the steps prompted on the screen. Be aware that payment information wil
   
   ![IAM Search Result on AWS Search bar](./img/IAMSearch.png)
   
-  ### Step 1.2.1: When selecting IAM it will take you to the dashboard, go to Users. Once there select the button "Add User".
+  ##### Step 1.2.1: When selecting IAM it will take you to the dashboard, go to Users. Once there select the button "Add User".
   
  ![IAM Users Page on](./img/IAMUserPage.png)
 
 
-### Step 1.2.2:The first page will ask for a name, it can be any name you want.
+##### Step 1.2.2: The first page will ask for a name, it can be any name you want.
 
 ![IAM User creation page asking for a name](./img/UserNamePage.png)
 
-### Step 1.2.3: Adding Permissions is the next step
+##### Step 1.2.3: Adding Permissions is the next step
 Make sure to select FullAccess policies for DynamoDB, Amplify, ECS, EC2, ECR, and Lambda. The easiest way to do this is by using the policy administrationaccess.
 
 ![IAM Permission Page with AdministratorAccess](./img/IAMPermissionsPage.png)
 
-### Step 1.2.4: The next step for user creation are tags. In this application it is not necessary. Continue to the next page which will have the user create button at the bottom. Click on the button, this will end the AWS account set up portion of the guide.
+##### Step 1.2.4: The next step for user creation are tags. In this application it is not necessary. Continue to the next page which will have the user create button at the bottom. Click on the button, this will end the AWS account set up portion of the guide.
 
 ![Review Page on IAM User creation](./img/CreateUserFinalPage.png)
 
