@@ -41,28 +41,90 @@ git clone https://github.com/davidseddy1/PrivateBlockchain.git
 cd BlockChainCode
 ```
 
-run the application to ensure that everything works
+After cloning the repository build
 ```
-node app.js
-
-```
-
-After ensuring it runs. Install docker desktop to your computer.
-You can install at this site: https://www.docker.com/get-started/
-
-After this follow this tutorial to dockerize the blockchain. 
-
-Following the dockerizing of blockchain, rebuild your docker image:
-```
-docker build -t imagename .
+docker build -t imagename
 ```
 
-Ensure that you have all the right credentials to access ecr from aws cli
-- Easiest route is to create an IAM user that as AdministrationAccess policy
+Before logging into ecr, ensure that proper credentials are set up, the easiest policy to put in 
+place is to give your self administrationaccess. After ensuring this please login to ecr. 
 
-Proceeding forward you can use the following commands to login to ecr. 
+```
+aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin ACCOUNTIDHERE!!!!.dkr.ecr.us-east-1.amazonaws.com
+```
+
+Go into AWS ECR console and select create new repository option
+Ensure that Private repository option is picked and add the name of the repository to the end of the path. 
+
+After this go back to the terminal to tag and push your image: 
+
+```
+docker tag imagename:latest YOURACCOUNT.dkr.ecr.us-east-1.amazonaws.com/AWSYOURREPO:YOURTAG
+docker push YOURACCOUNT.dkr.ecr.us-east-1.amazonaws.com/YOURREPO:YOURTAG
+```
+Go into your repository, you should see the image, from there copy the image URI, this is needed for later. 
 
 
+After this the terminal is no longer used. 
+Go to ECS and select the cluster tab on the left hand side. 
+**Create a new cluster**
+- Choose EC2 Linux and Networking, select Next on the bottom
+  - Pick a create a name for the cluster
+  - Pick On Demand for Provisioning Model
+  - EC2 Instance type choose the free tier option of t2.micro
+  - AMI option choose the first option Amazon Linux 2
+  - Leave the key-pair as none
+  - VPC options choose default
+  - Choose one of the subnets available 
+  - Ensure that Auto-Assign IP address is enabled
+  - Choose the default security groups
+  - For container Instance IAM Role choose ecsinstancerole or if that is not available choose the create a new one
+  - select create cluster, this will take a few minutes. 
+
+**Create a Task Definition**
+- On the left hand side choose Task Definition. 
+- Select Create new TaskDefinition
+  - Select EC2 tile on the bottom
+  - Name your task definition
+  - Select none for task role
+  - leave network mode as default
+  - Leave task memory and task cpu along
+  - Choose add container under Container Definition
+    -Type your container name
+    -Paste the image URI which you saved earlier
+    -Leave Private Repository authentication alone
+    -Do your port mapping, in this case it will DesiredPort:8000, since 8000 is the container port
+    -Choose Hard Limit 128 for Memory Limit
+    -Select create task, don't bother with the advanced settings
+    
+**Add TaskDefinition to cluster**
+-Go to your cluster, and choose the task tab
+-Choose Run new Task
+  - Choose EC2 as launch type
+  - Select the task you just created for task name
+  - choose your cluster
+  - leave task number as 1
+  - Leave task role as empty
+  - Leave everything else as default, and run your task
+
+**Go to your EC2 Instance**
+-Go to security Group in the left hand side toward the bottom
+-double click on the security group
+- Select edit inbound group
+  - Add a rule for custom TCP, Anwhere IPv4, for Port 8000
+  - Add another rule which is also Custom TCP, Anywhere IPv6, for port 8000
+- Now exit and Select Edit Outbound group
+  - Add the same rules that are for inbound rules
+
+Go back to the EC2 instance and go to overview detail
+- There you should see on the right public IPv4 DNS
+- Copy this address, and go to your web browser
+- Paste the public IPv4 DNS address and at the end add :8000
+- You should see a Get/ Request could not be found
+  - This means that everything has been set up correctly.
+
+For a visual Demonstration on how to set up blockchain on AWS, please refer to:
+- [AWS setup](https://www.youtube.com/watch?v=zs3tyVgiBQQ)
 
 ## Step 5: Running it Locally
 
