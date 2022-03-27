@@ -98,8 +98,8 @@ Go to ECS and select the cluster tab on the left hand side.
     -Select create task, don't bother with the advanced settings
     
 **Add TaskDefinition to cluster**
--Go to your cluster, and choose the task tab
--Choose Run new Task
+- Go to your cluster, and choose the task tab
+- Choose Run new Task
   - Choose EC2 as launch type
   - Select the task you just created for task name
   - choose your cluster
@@ -108,8 +108,8 @@ Go to ECS and select the cluster tab on the left hand side.
   - Leave everything else as default, and run your task
 
 **Go to your EC2 Instance**
--Go to security Group in the left hand side toward the bottom
--double click on the security group
+- Go to security Group in the left hand side toward the bottom
+- double click on the security group
 - Select edit inbound group
   - Add a rule for custom TCP, Anwhere IPv4, for Port 8000
   - Add another rule which is also Custom TCP, Anywhere IPv6, for port 8000
@@ -124,7 +124,7 @@ Go back to the EC2 instance and go to overview detail
   - This means that everything has been set up correctly.
 
 For a visual Demonstration on how to set up blockchain on AWS, please refer to:
-- [AWS setup](https://www.youtube.com/watch?v=zs3tyVgiBQQ)
+- [Visual BlockChain AWS setup](https://www.youtube.com/watch?v=zs3tyVgiBQQ)
 
 ## Step 5: Running it Locally
 
