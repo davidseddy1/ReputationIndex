@@ -5,12 +5,15 @@
 #### Step 1.1: Go to AWS Free Tier and create an account you do not posses one already [https://aws.amazon.com/free](https://aws.amazon.com/free/?all-free-tier.sort-by=item.additionalFields.SortRank&all-free-tier.sort-order=asc&awsf.Free%20Tier%20Types=*all&awsf.Free%20Tier%20Categories=*all). 
 Click on the orange "Create an AWS Account" Button at the top right of the screen. Complete the steps prompted on the screen. Be aware that payment information will be asked for and have to be provided in order to use any of the services.<br>
 
+![AWS Create Button Location](./img/AwsCreateAccount.svg)
+
+
 #### Step 1.2: Set up an IAM User 
   To be able to run the application fully an IAM User will need to be created. <br>
   In the search bar look IAM. The following article will explain how to set up one up:[ https://docs.aws.amazon.com/IAM/latest/UserGuide](https://docs.aws.amazon.com/IAM/latest/UserGuide/getting-started_create-admin-group.html)
 
 
-Make sure to select FullAccess policies for DynamoDB, Amplify, ECS, EC2, ECR, and Lambda.
+Make sure to select FullAccess policies for DynamoDB, Amplify, ECS, EC2, ECR, and Lambda. The easiest way to do this is by using the policy administrationaccess.
 
 
 ## Step 2: Clone Repository and Set Up Environment Variable
@@ -134,6 +137,8 @@ In your terminal run the following code:
 npm run dev
 ```
 In your browser type the URL: http://localhost:30000 to run the application.
+
+## Step 6: Amplify
 
 ## Additional Information
 
