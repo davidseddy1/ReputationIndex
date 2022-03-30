@@ -269,7 +269,7 @@ Once it is successfully created refresh the roles on the configuration page and 
 
 To make it more clear what the enviorment variables here is an image with a more clear listing. To get to this page after creating the app it will be in App Settings on the left under Environment variables.
 
-![List of environment variables](./img/EnviromentVariables.png)
+![List of environment variables](./img/EnviromentVariables.png) 
 
 ##### BLOCKCHAIN-URL:
 this will come from EC2. There will be some security issue with the browser so the temporary work around is to use cors-anywhere. Which will be done by going to the github: https://github.com/Rob--W/cors-anywhere#demo-server, and requesting access to the demo on the link: https://cors-anywhere.herokuapp.com/.
