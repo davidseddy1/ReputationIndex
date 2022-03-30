@@ -102,18 +102,18 @@ This section will require both Bitcoin Core and the Employee Referral Form to be
 
 ![Sign message and get digital signature](./img/bcc_signed_message.jpg)
  
-24. Navigate back to the Referral form and paste the signature in the text box next to digital signature, click "select"
+21. Navigate back to the Referral form and paste the signature in the text box next to digital signature, click "select"
     -  You should now be able to see the next field "Employee Unique Identifier"
 
 ![Digital Signature Verified](./img/ERF_digital_sig.jpg)
 
 
-25. Now enter the Employee Unique Identifier for the employee you plan to refer, then click "select"
+22. Now enter the Employee Unique Identifier for the employee you plan to refer, then click "select"
     - You should now see the employee name and the referral form should have become visible. Follow the instructions on the form and fill out the survey accordingly.
 
 ![Employee Unique Identifier](./img/ERF_EUI.jpg)
 
-27. Once you have finished the form, click "Submit"
+23. Once you have finished the form, click "Submit"
     - You will see the following screen after a successful submission.
  
 ![Submission Success](./img/ERF_submit.jpg)
