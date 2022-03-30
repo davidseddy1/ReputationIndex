@@ -2,7 +2,7 @@
 
 ## Step 1: Set up AWS Account
 
-#### Step 1.1: Go to AWS Free Tier and create an account you do not posses one already [https://aws.amazon.com/free](https://aws.amazon.com/free/?all-free-tier.sort-by=item.additionalFields.SortRank&all-free-tier.sort-order=asc&awsf.Free%20Tier%20Types=*all&awsf.Free%20Tier%20Categories=*all). 
+#### Go to AWS Free Tier and create an account you do not posses one already [https://aws.amazon.com/free](https://aws.amazon.com/free/?all-free-tier.sort-by=item.additionalFields.SortRank&all-free-tier.sort-order=asc&awsf.Free%20Tier%20Types=*all&awsf.Free%20Tier%20Categories=*all). 
 Click on the orange "Create an AWS Account" Button at the top right of the screen.
 
 ![AWS Create Button Location](./img/AWSCreateAccount.svg)
@@ -12,27 +12,29 @@ Complete the steps prompted on the screen. Be aware that payment information wil
 ![AWS Signup Page](./img/AWSSignUpPage.png)
 
 
-#### Step 1.2: Set up an IAM User 
+#### Set up an IAM User 
   To be able to run the application fully an IAM User will need to be created. <br>
   In the search bar look IAM. The following article will explain how to set up one up:[ https://docs.aws.amazon.com/IAM/latest/UserGuide](https://docs.aws.amazon.com/IAM/latest/UserGuide/getting-started_create-admin-group.html)
   
   ![IAM Search Result on AWS Search bar](./img/IAMSearch.png)
   
-  ##### Step 1.2.1: When selecting IAM it will take you to the dashboard, go to Users. Once there select the button "Add User".
+  When selecting IAM it will take you to the dashboard, go to Users. Once there select the button "Add User".
   
  ![IAM Users Page on](./img/IAMUserPage.png)
 
 
-##### Step 1.2.2: The first page will ask for a name, it can be any name you want.
+The first page will ask for a name, it can be any name you want.
 
 ![IAM User creation page asking for a name](./img/UserNamePage.png)
 
-##### Step 1.2.3: Adding Permissions is the next step
+Adding Permissions is the next step.
+
+
 Make sure to select FullAccess policies for DynamoDB, Amplify, ECS, EC2, ECR, and Lambda. The easiest way to do this is by using the policy administrationaccess.
 
 ![IAM Permission Page with AdministratorAccess](./img/IAMPermissionsPage.png)
 
-##### Step 1.2.4: The next step for user creation are tags. In this application it is not necessary. Continue to the next page which will have the user create button at the bottom. Click on the button, this will end the AWS account set up portion of the guide.
+The next step for user creation are tags. In this application it is not necessary. Continue to the next page which will have the user create button at the bottom. Click on the button, this will end the AWS account set up portion of the guide.
 
 ![Review Page on IAM User creation](./img/CreateUserFinalPage.png)
 
@@ -214,6 +216,9 @@ In your browser type the URL: http://localhost:30000 to run the application.
 
 The the following link goes into greater detail and background on setting up the github on Amplify: [(https://docs.aws.amazon.com/amplify](https://docs.aws.amazon.com/amplify/latest/userguide/getting-started.html).
 
-## Additional Information
+*** Temporary solution *** 
+//Have add the https://cors-anywhere.herokuapp.com/ infront of ec2-54-145-6-33.compute-1.amazonaws.com:8000 to make https://cors-anywhere.herokuapp.com/ec2-54-145-6-33.compute-1.amazonaws.com:8000  which will be set in the environment variables....the blockchain will be different 
+Have to tell to go to https://github.com/Rob--W/cors-anywhere#demo-server and go to https://cors-anywhere.herokuapp.com/ to request access to the demo
+
 
 #### Check that it added to the block chain:
