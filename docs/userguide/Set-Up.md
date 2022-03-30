@@ -312,4 +312,4 @@ Clicking on the domain URL will bring you to the website.
 
 The weights for the survey questions are in a javascript object. Which is found in the file weights.ts in the [otrl-reputation-index github](https://github.com/OtRL-Reputation-Index/otrl-referral/blob/main/src/pages/api/weights.ts). It can be accessed by going src >> pages >> api >> weights.ts To change the value just change the number next to the question.
 
-![Location of weights object](./img/ReferralWebsite.png)
+![Location of weights object](./img/WeightsLocation.png)
