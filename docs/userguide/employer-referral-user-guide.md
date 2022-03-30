@@ -74,3 +74,23 @@ Employers must visit https://bitcoin.org/en/bitcoin-core/ in order to download a
 
 ## Using Bitcoin Core with the Employee Referral Form
 This section will require both Bitcoin Core and the Employee Referral Form to be open on your device. Consecutive steps may jump from the Employee Referral Form to the Bitcoin Core application.
+
+16. Navigate to [Referral form](https://main.d2qwhcudgunbox.amplifyapp.com) 
+
+17. Paste the address/public_key into the Employer Identification Field
+
+18. Your company name should appear on the right hand side and a message should appear below
+
+19. Copy the message and keep it somewhere on hand
+
+20. Navigate to Bitcoin core to sign the message
+
+21. In the console type dumpprivkey followed by your address in quotation marks
+
+22. The output is your private key, copy your private key
+  
+23. In the console, proceed to type signwithprivkey followed by your private key in quotation marks and the message in quotation marks
+ 
+24. Your digital signature will be produced, copy the digital signature 
+ 
+25. Navigate back to the form, and paste the signature in the text box next to digital signature
