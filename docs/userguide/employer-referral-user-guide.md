@@ -93,7 +93,7 @@ This section will require both Bitcoin Core and the Employee Referral Form to be
     - EX: dumpprivkey "public_key/address"
     - The output is your private key, copy your private key
 
-![Dump Private Key](./img/bcc_dumpprivkey.jpg)
+![Dump Private Key](./img/bcc_dumpprivkey1.jpg)
 
   
 20. In the console, proceed to type signmessagewithprivkey followed by your private key in quotation marks and the message in quotation marks:
