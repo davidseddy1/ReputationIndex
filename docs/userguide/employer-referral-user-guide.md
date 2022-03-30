@@ -77,26 +77,43 @@ This section will require both Bitcoin Core and the Employee Referral Form to be
 
 16. Navigate to [Referral form](https://main.d2qwhcudgunbox.amplifyapp.com) 
 
+![Employee Referral Form Landing Page](./img/ERF_landing_page.jpg)
+
 17. Paste the address/public_key into the Employer Identification Field and click "select," your company name should appear on the right hand side and a message should appear below.
+    - Copy the message and keep it on hand, it may be helpful to paste it somewhere you can recopy it.
 
-18. Copy the message and keep it on hand, it may be helpful to paste it somewhere you can recopy it.
+![Paste Employer ID](./img/ERF_company_name.jpg)
 
-19. Navigate to the Bitcoin core console to sign the message
 
-20. In the console type dumpprivkey followed by your address in quotation marks:
+18. Navigate to the Bitcoin core console to sign the message
+
+![Bitcoin Core Console](./img/bcc_console.jpg)
+
+19. In the console type dumpprivkey followed by your address in quotation marks:
     - EX: dumpprivkey "public_key/address"
+    - The output is your private key, copy your private key
 
-21. The output is your private key, copy your private key
+![Dump Private Key](./img/bcc_dumpprivkey.jpg)
+
   
-22. In the console, proceed to type signwithprivkey followed by your private key in quotation marks and the message in quotation marks:
-    - EX: signwithprivkey "private_key" "message"
- 
-23. Your digital signature will be produced, copy the digital signature
+20. In the console, proceed to type signmessagewithprivkey followed by your private key in quotation marks and the message in quotation marks:
+    - EX: signmessagewithprivkey "private_key" "message"
+    - The output is your digital signature will be produced, copy the digital signature
+
+![Sign message and get digital signature](./img/bcc_signed_message.jpg)
  
 24. Navigate back to the Referral form and paste the signature in the text box next to digital signature, click "select"
+    -  You should now be able to see the next field "Employee Unique Identifier"
+
+![Digital Signature Verified](./img/ERF_digital_sig.jpg)
+
 
 25. Now enter the Employee Unique Identifier for the employee you plan to refer, then click "select"
+    - You should now see the employee name and the referral form should have become visible. Follow the instructions on the form and fill out the survey accordingly.
 
-26. You should now see the employee name and the referral form should have become visible. Follow the instructions on the form and fill out the survey accordingly.
+![Employee Unique Identifier](./img/ERF_EUI.jpg)
 
 27. Once you have finished the form, click "Submit"
+    - You will see the following screen after a successful submission.
+ 
+![Submission Success](./img/ERF_submit.jpg)
