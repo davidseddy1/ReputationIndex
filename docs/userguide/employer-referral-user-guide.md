@@ -77,20 +77,26 @@ This section will require both Bitcoin Core and the Employee Referral Form to be
 
 16. Navigate to [Referral form](https://main.d2qwhcudgunbox.amplifyapp.com) 
 
-17. Paste the address/public_key into the Employer Identification Field
+17. Paste the address/public_key into the Employer Identification Field and click "select," your company name should appear on the right hand side and a message should appear below.
 
-18. Your company name should appear on the right hand side and a message should appear below
+18. Copy the message and keep it on hand, it may be helpful to paste it somewhere you can recopy it.
 
-19. Copy the message and keep it somewhere on hand
+19. Navigate to the Bitcoin core console to sign the message
 
-20. Navigate to Bitcoin core to sign the message
+20. In the console type dumpprivkey followed by your address in quotation marks:
+    - EX: dumpprivkey "public_key/address"
 
-21. In the console type dumpprivkey followed by your address in quotation marks
-
-22. The output is your private key, copy your private key
+21. The output is your private key, copy your private key
   
-23. In the console, proceed to type signwithprivkey followed by your private key in quotation marks and the message in quotation marks
+22. In the console, proceed to type signwithprivkey followed by your private key in quotation marks and the message in quotation marks:
+    - EX: signwithprivkey "private_key" "message"
  
-24. Your digital signature will be produced, copy the digital signature 
+23. Your digital signature will be produced, copy the digital signature
  
-25. Navigate back to the form, and paste the signature in the text box next to digital signature
+24. Navigate back to the Referral form and paste the signature in the text box next to digital signature, click "select"
+
+25. Now enter the Employee Unique Identifier for the employee you plan to refer, then click "select"
+
+26. You should now see the employee name and the referral form should have become visible. Follow the instructions on the form and fill out the survey accordingly.
+
+27. Once you have finished the form, click "Submit"
