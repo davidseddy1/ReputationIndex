@@ -238,7 +238,7 @@ For reference the link is: https://github.com/OtRL-Reputation-Index/otrl-referra
 
 Once it has the link it will ask you to choose a branch so select the main branch.
 
-![Connecting repository branch to Amplify](./img/AddRepoBranchPagee.png)
+![Connecting repository branch to Amplify](./img/AddRepoBranchPage.png)
 
 Next page is configuration. What will be added on this page will be the environemnt variables which occur in the advanced section of the page. Note that for BlockChain-URL the one in the example is a temporary solution that will be explained later in the this step.
 
@@ -269,7 +269,7 @@ Once it is successfully created refresh the roles on the configuration page and 
 
 To make it more clear what the enviorment variables here is an image with a more clear listing. To get to this page after creating the app it will be in App Settings on the left under Environment variables.
 
-![List of environment variables](./img/EnvironmentVariables.png)
+![List of environment variables](./img/EnviromentVariables.png)
 
 ##### BLOCKCHAIN-URL:
 this will come from EC2. There will be some security issue with the browser so the temporary work around is to use cors-anywhere. Which will be done by going to the github: https://github.com/Rob--W/cors-anywhere#demo-server, and requesting access to the demo on the link: https://cors-anywhere.herokuapp.com/.
