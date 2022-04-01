@@ -21,3 +21,5 @@
 5. You can now see the updated referral items in the window.
 
 ![Referral Table](./img/aws_referral_table.jpg)
+
+## Confirm Blockchain Update
