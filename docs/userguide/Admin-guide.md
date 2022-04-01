@@ -24,15 +24,18 @@
 
 ## Confirm Blockchain Update
 1. Go to the AWS Dashboard and search cloudwatch
-![Search CloudWatch](./img/Cloudwatchdirection.png)
+![Search CloudWatch](./img/SearchCloudWatch.png)
 
 2. Click on Log Groups on the CloudWatch Dashboard
-![Click on LogGroups](./img/cloudwatchview.png)
+![Click on LogGroups](./img/ClickLogGroups.png)
 
-3. Select the Desired Log Group
-![Click on Log group](./img/PreLogview.png)
+3. Select the Desired Log Group named after the Task definition name
+![Click on Log group](./img/SelectTaskDefinition.png)
 
-4. View the Logs for Blockchain
+4. Select the newest logstream 
+![Select LogStream](./img/SelectLogStream.png) 
+
+6. View the Logs for Blockchain
 ![View Logs](./img/Logs.png)
     - error code Post /requestValidation 200 -> Success
     - error code Post /requestValidation 404 -> Failure
