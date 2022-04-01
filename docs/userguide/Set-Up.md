@@ -179,8 +179,12 @@ Go to ECS and select the cluster tab on the left hand side.
     -Paste the image URI which you saved earlier
     -Leave Private Repository authentication alone
     -Do your port mapping, in this case it will DesiredPort:8000, since 8000 is the container port
-    -Choose Hard Limit 128 for Memory Limit
-    -Select create task, don't bother with the advanced settings
+    -Choose Hard Limit of at most 128 or 64 for Memory Limit
+    -In advanced settings go down to Storage and Log Settings
+      -Go to the subheading called log configurations
+      -Select awslogs,leave the auto-filled answers alone
+    -Navigate to the bottom of the page, and select create
+  - Select create task
     
 **Add TaskDefinition to cluster**
 - Go to your cluster, and choose the task tab
