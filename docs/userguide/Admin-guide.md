@@ -23,3 +23,18 @@
 ![Referral Table](./img/aws_referral_table.jpg)
 
 ## Confirm Blockchain Update
+1. Go to the AWS Dashboard and search cloudwatch
+![Search CloudWatch](./img/Cloudwatchdirection.png)
+
+2. Click on Log Groups on the CloudWatch Dashboard
+![Click on LogGroups](./img/cloudwatchview.png)
+
+3. Select the Desired Log Group
+![Click on Log group](./img/PreLogview.png)
+
+4. View the Logs for Blockchain
+![View Logs](./img/Logs.png)
+    - error code Post /requestValidation 200 -> Success
+    - error code Post /requestValidation 404 -> Failure
+    - error code Post /submt 200             -> Success
+    - error code Post /submit 404            -> Failure
