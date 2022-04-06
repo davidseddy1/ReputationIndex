@@ -1,0 +1,14 @@
+@startsalt
+{#
+    Registration | * | * | * | *
+    Unique Identifier | ^Select an option^ | * | ^Select^
+    Message | E08D706B3E4CE964B632746CF568913CB93F1ED36476FBB0494B80ED17C5975C |*
+    Digital Signature  |^Select an option^|*|^Verify^
+    Registering as a? |^Employer^|^Employee^ | *
+    Company Name | * | * | * | *
+    Email | * | * | * | *
+    Name | * | * | *
+    Phone Number | * | * | *
+
+}
+@endsalt
