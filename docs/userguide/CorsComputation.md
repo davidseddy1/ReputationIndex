@@ -1,4 +1,4 @@
-# Computation Cost for Cors/ SSL Err_PROT
+# Computation Cost for Cors/ Err_SSL_PROTOCOL_ERROR
 
 A solution to this is getting a SSl certificate which can turn an http protocal to an https protocol. 
 This way the front-end/lambda can talk to the blockchain. These are the steps to get an SSL protocol: 
