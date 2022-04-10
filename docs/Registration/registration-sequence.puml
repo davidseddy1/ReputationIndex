@@ -1,0 +1,27 @@
+@startuml
+
+title "Registration Process"
+
+Actor "User"
+participant "Frontend"
+
+entity "Lambda" as lamb
+Database "DynamoDB" as db
+
+User -> Frontend : enter unique identifier
+Frontend -> lamb : send unique identifier
+lamb -> db : validate unique identifier
+db-> lamb : send validation
+lamb -> Blockchain : request message
+Blockchain -> lamb : generate message
+lamb -> Frontend : display message
+User -> Frontend : enter digital signature
+Frontend -> lamb : send signature
+lamb -> Frontend : display registration form
+User -> Frontend : submit information
+Frontend -> lamb : send information
+lamb -> db : post information
+db -> lamb : confirmation
+lamb -> Frontend : confirmation
+
+@enduml
