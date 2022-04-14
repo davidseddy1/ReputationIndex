@@ -11,7 +11,7 @@
 ![Create public key](./img/CreatePublicKey.jpg)
 
 4. Copy and paste the public key into the box and click Select.
-- A message will be displayed
+    - A message will be displayed
 
 ![Public key creation](./img/PublicKeyInsertion.jpg)
 
