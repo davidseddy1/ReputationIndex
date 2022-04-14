@@ -7,4 +7,4 @@ Users will need bitcoin core up and running for a successful registration, the l
 ![Front end mockup](./Registration.svg)
 
 ## Sequence Diagram
-![Sequence diagram](./Registration/registration-sequence.svg)
+![Sequence diagram](./registration-sequence.svg)
