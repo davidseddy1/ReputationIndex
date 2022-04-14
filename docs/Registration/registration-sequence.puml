@@ -18,6 +18,11 @@ lamb -> Frontend : display message
 User -> Frontend : enter digital signature
 Frontend -> lamb : send signature
 lamb -> Frontend : display registration form
+User -> Frontend : enter company name
+Frontend -> lamb : send company name
+lamb -> db : send company name
+db -> lamb : company list
+lamb -> Frontend : company list
 User -> Frontend : submit information
 Frontend -> lamb : send information
 lamb -> db : post information
