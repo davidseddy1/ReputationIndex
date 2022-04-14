@@ -11,6 +11,9 @@
 ![Create public key](./img/CreatePublicKey.jpg)
 
 4. Copy and paste the public key into the box and click Select.
+- A message will be displayed
+
+![Public key creation](./img/PublicKeyInsertion.jpg)
 
 5. Get the digital signature by typing into the Bitcoin console:
     signmessage "public key" "message"
@@ -19,7 +22,11 @@
 
 6. Copy and paste the result into the Encrypted Message box and select Verify
 
+![Verified signature](./img/VerifiedSignature.jpg)
+
 7. Select whether you are registering as an Employer or Employee. 
+
+![Select employer or employee](./img/EmployerOrEmployee.jpg)
 
 8. Follow the instructions on the form and fill out the survey accordingly.
 
@@ -30,4 +37,4 @@
 ![Submission success](./img/RegistrationSubmit.jpg)
 
 ## Bitcoin Help
-- For additional help with navigating Bitcoin Core and create a wallet, please refer to this guide: https://github.com/davidseddy1/ReputationIndex/blob/4f5f81d87f1e8494fd63bd084a875df1c7bdf928/docs/userguide/employer-referral-user-guide.md
+- For additional help with navigating Bitcoin Core and creating a wallet, please refer to this guide: https://github.com/davidseddy1/ReputationIndex/blob/4f5f81d87f1e8494fd63bd084a875df1c7bdf928/docs/userguide/employer-referral-user-guide.md
