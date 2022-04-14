@@ -4,7 +4,7 @@ Users will need bitcoin core up and running for a successful registration, the l
 [here](https://github.com/davidseddy1/ReputationIndex/blob/4f5f81d87f1e8494fd63bd084a875df1c7bdf928/docs/userguide/employer-referral-user-guide.md)
 
 ## Front End Mockup
-![Front end mockup](./Registration/Registration.svg)
+![Front end mockup](./Registration.svg)
 
 ## Sequence Diagram
-![Sequence Diagram](./Registration/registration-sequence.svg)
+![Sequence Diagram](./registration-sequence.svg)
