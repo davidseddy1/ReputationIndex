@@ -75,11 +75,11 @@ In partition key type pk for public key. The other settings should remian the de
 
 ![Partition key for secondary global index](./img/SecondaryGlobalIndexPage.png)
 
-Once that is created it is time to add data to the table. Click on the upper right drop down button called Actions. Choose the "Create item" action. This adds data to the table.
+Once that is created initialize the table with a Numeric counter variable equal to Zero. Click on the upper right drop down button called Actions. Choose the "Create item" action. This adds data to the table.
 
 ![Action drop down shows Create Item option](./img/ActionsCreateItemsDemo.png)
 
-The item will have the following attributes: id, email, first_name, last_name, last_updated, middle_name, phone_num, pk, referrals_num, and rui. The order they are added does not matter. To add attributes to this item click on "Add new attribute" and then select the data type for the attribute. Most of these will be strings except for referrals_num and rui which will be the datatype number.
+The item will have the following attributes: id, email, first_name, last_name, last_updated, middle_name, phone_num, pk, referrals_num,company_name and rui. The order they are added does not matter. To add attributes to this item click on "Add new attribute" and then select the data type for the attribute. Most of these will be strings except for referrals_num and rui which will be the datatype number.
 
 ![Creating an Employee Item with new attribute drop down open](./img/CreateEmployeeItem.png)
 
