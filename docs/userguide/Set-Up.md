@@ -39,9 +39,9 @@ The next step for user creation are tags. In this application it is not necessar
 
 ## Step 2: Creating The Database with DynamoDB
 
-This step will walk you through how to create a database capitable with the application. There will be three tables involved: Referral, Employee, and Employer. In addition there will be a secondary global index  for Employee and Employer called pk-index. 
+This step will walk you through how to create a database compatible with the application. There will be three tables involved: Referral, Employee, and Employer. In addition there will be a secondary global index for Employee and Employer called pk-index. 
 
-In the doc directory in the respitory [otrl_referral](https://github.com/OtRL-Reputation-Index/otrl-referral) there are JSON objects and a readme that tells how use AWS CLI to create the tables. The JSON objects that Items in the name will populate the tables with data, in those files it is dummy data.
+In the doc directory in the repository [otrl_referral](https://github.com/OtRL-Reputation-Index/otrl-referral)  there are [JSON objects](https://github.com/OtRL-Reputation-Index/otrl-referral/tree/main/docs) and a [readme](https://github.com/OtRL-Reputation-Index/otrl-referral/blob/main/docs/README.md) that tells how to use AWS CLI to create the tables. The JSON objects that have Items in the name will populate the tables with data, in those files it is dummy data.
 
 ![Otrl-reputation-index github with docs highlighted](./img/DirectoryForDatabaseReadMe.png)
 
